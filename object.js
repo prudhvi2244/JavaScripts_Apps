@@ -70,9 +70,63 @@ for(employee in employees)
 */
 
 
+let employee={
+    eid:1,
+    ename:'Raj',
+    emails:['raj@gmail.com','prudhvi.spring@gmail.com'],
+    married:true,
+    isSenior:function(experience)
+    {
+        return experience>12
+    },
+    technologies:['Java 14','MEAN Stack','Python','Django','Groovy'],
+    address:{
+        street:'Electronic City',
+        pincode :2442424,
+        city:'Bangalore'
+    }
+}
+
+console.log(employee)
+
+
+console.log('Is ',employee.ename, ' Senior : ',employee.isSenior(13))
+console.log('Adress of Employee')
+
+console.log('Employee Street :',employee.address.street)
+console.log('Employee Technology -1 :',employee.technologies[0])
+console.log('Employee Technology -2 :',employee.technologies[1])
+
+//function : function
+
+
+/*
+
+    syntax to define function in java script:
+
+    function functionName(parameters)
+        {
+            return returnValue
+        }
+
+*/
+
+//ES6 Features
 
 
 
+class Employee
+{
+    constructor()
+    {
+        console.log('Employee Class Constructor')
+    }
+}
+
+
+var e1=new Employee()
+var e2=new Employee()
+var e3=new Employee()
 
 
 
